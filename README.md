@@ -1,5 +1,8 @@
 # Youtube-MERN
 
+A YouTube like website ,where one can Register, Upload a Video, like a video and also can comment.
+also this project used Redux-toolkit for maintaining and managing state.
+
 
 Video demo:
 
