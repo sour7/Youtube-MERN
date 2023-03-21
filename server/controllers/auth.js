@@ -26,7 +26,7 @@ export const signin = async (req, res, next) => {
 
     if (!isCorrect) return next(createError(400, "Wrong Credentials!"));
 
-    const token = jwt.sign({ id: user._id }, process.env.JWT);
+    const token = jwt.sign({ id: user._id }, process.env.JWT||jesomnt89web84y8token98);
     const { password, ...others } = user._doc;
 
     res
@@ -44,7 +44,7 @@ export const googleAuth = async (req, res, next) => {
   try {
     const user = await User.findOne({ email: req.body.email });
     if (user) {
-      const token = jwt.sign({ id: user._id }, process.env.JWT);
+      const token = jwt.sign({ id: user._id }, process.env.JWT||jesomnt89web84y8token98);
       res
         .cookie("access_token", token, {
           httpOnly: true,
