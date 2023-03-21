@@ -114,7 +114,7 @@ const SignIn = () => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/api/auth/signup", {
+      await axios.post("/auth/signup", {
         name,
         password,
         email,
