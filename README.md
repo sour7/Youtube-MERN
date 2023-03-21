@@ -2,7 +2,9 @@
 
 A YouTube like website ,where one can Register, Upload a Video, like a video and also can comment.
 also this project used Redux-toolkit for maintaining and managing state.
+
 Visit site: https://youtube-client-mern.netlify.app/
+
 server deployed link:https://youtube-server-ervw.onrender.com
 
 Video demo:
